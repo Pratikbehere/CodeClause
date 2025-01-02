@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container
+  {
+    width: 100%;
+    position: relative;
+   
+  }
+  .nav img{
+    width: 40px;
+    height: 40px;
+  }
+  .logo-text span{
+    color: green;
+  }
+  .logo-text{
+   font-size: 20px;
+  }
+  .nav{
+    z-index: 10;
+   position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+  }
+  .nav-right{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .nav-left{
+   padding-top:15px;
+  }
+  .nav-option{
+    display: none;
+  }
+  /* .big-img img{
+    
+    height: calc(100vh - 60px);
+  } */
+   .about{
+    background-color: green;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    padding-left: 15px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+   }
+   .about-text1{
+    font-size: 20px;
+    font-weight: 400;
+   }
+   /* --------------------------------------------about & nav------------------------------- */
+   .data-boxes {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    padding-top: 150px;
+  }
+  
+  .db {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+  }
+  
+  .icon {
+    font-size: 50px;
+    color: #333; 
+    margin-bottom: 10px;
+  }
+  
+  .i-text span {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .i-text p {
+    font-size: 14px; 
+    color: #666;
+    line-height: 1.5;
+  }
+  
+   
+   /* --------------------------------------------------page-info-------------------------- */
+   .why-choose{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700px;
+    padding-bottom: 20px;
+   }
+   .courses{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 40px;
+    margin-bottom: 30px;
+   }
+   .co{
+    text-align:center ;
+    width: 100%;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: red;
+    
+   }
+
+   /* -----------------------------------------footer------------------------- */
+   .footer{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+   }
+   .company{
+    font-size: 25px;
+    font-weight: 600;
+
+   }
+   .links{
+    font-size: 20px;
+    font-weight: 600;
+   }
+   .our-services{
+    font-size: 20px;
+    font-weight: 600;
+   }
+   
+  @media (min-width: 768px)
+  {
+    .bar
+    {
+     display: none;
+    }
+    .nav{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .nav-option{
+      display: flex;        
+      gap: 15px;  
+      padding-right: 20px;
+    }
+    .nav-option a{
+      color: black;
+      text-decoration: none;
+    }
+    .logo-text{
+      padding-left: 10px;
+    }
+    .nav-option span{
+      color: green;
+    }
+    
+     .about{
+      flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 58px;
+   padding-left: 60px;
+   color: white;
+     }
+/* --------------------------------------------about & nav------------------------------- */
+
+/* ---------------------------------------------coures---------------------------------- */
+.courses{
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.co{
+  width: 25%;
+}
+/* --------------------------------------------footer----------------------------- */
+.footer{
+  width: 100%;
+  flex-direction: row;
+}
+.f1{
+  width: 30%;
+}
+  }
